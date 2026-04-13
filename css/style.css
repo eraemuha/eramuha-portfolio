@@ -1,0 +1,35 @@
+div h1 {
+    margin: 1rem 0;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.grid {
+    margin: 0.5rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "content";
+    gap: 1rem;
+}
+
+/* Tablet: 2 columns */
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 columns */
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
