@@ -1,13 +1,9 @@
-div h1 {
-    margin: 1rem 0;
-}
-
 .logo {
     border-radius: 50%;
 }
 
 .grid {
-    margin: 0.5rem;
+    margin: 2rem;
     display: grid;
     grid-template-rows: auto;
     grid-auto-rows: auto;
