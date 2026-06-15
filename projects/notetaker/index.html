@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web & HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>
+            The Web & HTML
+        </h1>
+        <h2>
+            HTML
+        </h2>
+        <p>
+            <strong>HTML</strong> stands for <em><mark>Hypertext Markup Language</mark></em>,
+            and is one of the building blocks of the Web.
+            The Web (or World Wide Web) is basically a collection of HTML documents and other files.
+        </p>
+        <p>
+            HTML contains text, that the user will actually read in their browser, and Markup,
+            which tells the browser what that text should look like, or how it's arranged.
+            Within Markup, there can be also references, to include other documents and files,
+            like images and videos, or to link other HTML documents
+            (the main reason that makes the Web Web like).
+        </p>
+
+        <h2>HTML Elements</h2>
+        <p>
+            HTML elements are made up with tags, text with special meaning.
+            <br>
+            There are two types of HTML elements:
+        </p>
+        <ul>
+            <li>
+                <strong>Block Elements</strong>: Block elements are used for large sections of text,
+                such as paragraphs, headlines, or lists; and also for some other features such as video players and
+                tables.
+                A block element creates a (usually invisible) box in the browser display. By default, this box takes
+                up the full width of the display. The beginning of a block always starts on a new line in the display.
+                Most block elements have a particular way they are displayed by default: paragraphs have margins
+                around them; lists have bullet-points or numbered items; headlines are printed in large text. There
+                is also a generic block element, div, which has no special defaults.
+            </li>
+            <li>
+                <strong>Inline Elements</strong>: Inline elements do not create a full-width box on the display.
+                They modify the display of text, or insert other things into the text — such as line breaks, images, or
+                hyperlinks.
+                Some of the inline elements require attributes, extra information besides the name of the element
+                itself.
+                Attributes are written inside the opening tag of the element.
+            </li>
+        </ul>
+        <h3>List of Inline Elements</h3>
+        <ul>
+            <li>
+                em ​and strong - Emphasis.
+                By default, text inside ​em is displayed as ​italic​,
+                and text in ​strong is displayed as boldface​.
+            </li>
+            <li>
+                br - Line break. ​(empty)
+                A line break does not create a new paragraph;
+                it only marks the end of a line.
+            </li>
+            <li>
+                sub and ​sup - Superscript and subscript.
+                Useful for math and chemistry:
+                I have x<sup>3</sup>+2x​<sup>2</sup> molecules of H<sub>2</sub>​O.
+            </li>
+            <li>
+                mark - Highlighting.
+                Not very often used, but it's <mark>​kind of cool</mark>​.
+            </li>
+            <li>
+                img - Images.
+                Needs a src attribute with a URL, and an alt attribute with descriptive text.
+            </li>
+            <li>
+                a - Hyperlinks.
+                Needs an href attribute with a URL.
+            </li>
+        </ul>
+        <h3>List of Block Elements</h3>
+        <ul>
+            <li>
+                p - Paragraph.
+                Text in a paragraph is separated visually from
+                other paragraphs by a small margin.
+            </li>
+            <li>
+                ul and ol - Unordered and ordered lists.
+                By default, ul lists are displayed with bullet points, and ol lists with numbered items.
+            </li>
+            <li>
+                li - List items inside a ul or ol list.
+                The li element has to be nested inside a ul or ol list;
+                it can't occur on its own.
+            </li>
+            <li>
+                Section headers, from h1 (largest) to h6 (smallest).
+                Used for headlines, section titles, and the like.
+            </li>
+            <li>
+                div - A logical division of a page or document.
+                Other block elements such as paragraphs, lists, and headers can be nested inside a div.
+                Because they don't have any default display settings, divs are heavily used with custom styling with
+                CSS.
+            </li>
+        </ul>
+        <h2>
+            Images
+        </h2>
+        <p>
+            You can have images on the web:
+            <img src="https://placebear.com/800/600" alt="A description of the image">
+            <br>
+            To show an image on the web, you have to point to the image source. 
+            The URL of an image may be an absolute URL, such as <a href="https://placebear.com/800/600">placebear</a>, or it
+            may be a relative URL such as images/wolves.jpg.
+            The alt text is used if the image can't be loaded, or if the user can't see images - such as if the
+            user is using a screen reader.
+        </p>
+        <h2>
+            Links
+        </h2>
+        <p>
+            Hyperlinks allow the user to navigate from one page to another. They are created using the a
+            element. The destination of the link is written in an attribute called href; the link text appears as
+            the contents of the a element. Here's an example:
+            <a href="https://en.wikipedia.org/wiki/Hypertext" target="_blank">
+                Wikipedia's "Hypertext" article
+            </a>
+            This code produces a link like this: Wikipedia's "Hypertext" article.
+            A link within a single web site can be written using a relative URL. Links to other sites must be
+            written as absolute URLs
+        </p>
+    </div>
+</body>
+
+</html>
