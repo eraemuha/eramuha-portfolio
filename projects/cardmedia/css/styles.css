@@ -19,6 +19,11 @@ img, .box, .image {
     border-radius: 10px;
 }
 
+img, .image {
+    width: 315px;
+    height: 300px;
+}
+
 .header, .image, .info {
     margin: 0.5em;
 }
@@ -33,11 +38,6 @@ img, .box, .image {
     width: 335px;
     box-shadow: 10px 10px 5px #e6e6e6;
     margin: 1%;
-}
-
-.image, img {
-    width: 315px;
-    height: 300px;
 }
 
 .info {

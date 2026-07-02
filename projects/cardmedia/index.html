@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Cardify - Everything in Cards</title>
+  <title>Cardmedia - Digital Content in Cards</title>
   <!-- MDB icon -->
   <link rel="icon" href="img/eramuha.png" type="image/x-icon" />
   <!-- Font Awesome -->
@@ -14,8 +14,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Custom CSS 
+   <link rel="stylesheet" href="css/styles.css" />
+  -->
+
 </head>
 
 <body>
@@ -23,71 +25,140 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cardify</a>
+        <a class="navbar-brand" href="index.html">Cardmedia</a>
         <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">Images</a>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                role="button" aria-expanded="false">
+                Images
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Places</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="animals.html">Animals</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Food</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                role="button" aria-expanded="false">
+                Videos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Trailers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Courses</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Movies</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Music</a>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                role="button" aria-expanded="false">
+                Music
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">AI Music</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Songs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Music Videos</a>
+                </li>
+              </ul>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <div class="container">
-      <div class="box">
-        <div class="header">
-          <!-- your favorite animal's name goes here -->
-          <h3>Koala</h3>
+    <!-- Carousel wrapper -->
+    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
+            alt="Sunset Over the City" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
         </div>
-        <div class="image">
-          <!-- your favorite animal's image goes here -->
-          <img src="https://placebear.com/g/200/300" alt="Card Image">
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
+            alt="Canyon at Nigh" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
-        <div class="info">
-          <!-- your favorite animal's interesting fact goes here -->
-          <p>
-            <em>
-              The pelage of the koala is denser on the back.
-              The back fur colour varies from light grey to chocolate brown.
-            </em>
-          </p>
-          <ul>
-            <!-- your favorite animal's list items go here -->
-            <li><span><strong>Scientific Name</strong></span>: Phascolarctos cinereus</li>
-            <li><span><strong>Average Length</strong></span>: 60–85 cm (24–33 in)</li>
-            <li><span><strong>Average Lifespan</strong></span>: 13 to 18 years</li>
-            <li><span><strong>Habitat</strong></span>: Australia</li>
-          </ul>
-          <!-- your favorite animal's description goes here -->
-          <p>
-            The koala (Phascolarctos cinereus), sometimes called koala bear, is an arboreal herbivorous
-            marsupial
-            native to Australia. It is the only extant representative of the family Phascolarctidae and its
-            closest
-            living relatives are the wombats.
-          </p>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
+            alt="Cliff Above a Stormy Sea" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
         </div>
       </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <!-- Carousel wrapper -->
   </main>
   <footer class="bg-body-tertiary text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2020 Copyright:
-      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2026 Copyright:
+      <a class="text-body" href="C:\Users\eraem\OneDrive - Eramuha\Projects\eraverse\eramuha-portfolio\index.html">
+        <strong>
+          Eramuha
+        </strong>
+      </a>
     </div>
     <!-- Copyright -->
   </footer>
