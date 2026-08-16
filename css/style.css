@@ -1,4 +1,11 @@
 /* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
 body {
     font-family: Times, "Times New Roman", serif;
 }
@@ -62,12 +69,12 @@ li {
 }
 
 /* Each grid cell stretches to row height */
-.cards-grid > div {
+.cards-grid>div {
     display: flex;
     min-width: 0;
 }
 
-.cards-grid > div > .card {
+.cards-grid>div>.card {
     display: flex;
     flex-direction: column;
     width: 100%;
