@@ -1,0 +1,12 @@
+.board {
+    display: flex;
+}
+
+.cell {
+    background-color: cornflowerblue;
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    font-size: 80px;
+    text-align: center;
+}
