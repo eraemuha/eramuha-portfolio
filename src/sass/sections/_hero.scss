@@ -1,19 +1,21 @@
 #hero {
   min-height: 100vh;
-  height: 100vh;
+  min-height: 100dvh;
+  height: auto;
   display: flex;
   align-items: center;
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
   color: $dark-blue-text;
-  padding: 0rem 5.6rem;
+  padding: 4rem clamp(1.6rem, 4vw, 5.6rem);
   margin-bottom: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
+  max-width: 100%;
 
   // Set position sticky so the jumbotron stays fixed while you scroll.
   // position: sticky;
@@ -24,29 +26,18 @@
   background-position: center;
   background-size: cover; */
 
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
-
   .hero-title {
-    font-size: 5.6rem;
+    font-size: clamp(2.8rem, 2.4vw + 2rem, 5.6rem);
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-wrap: balance;
 
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
     @include respond(tab-port) {
-      font-size: 3.6rem;
       text-align: center;
-    }
-    @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 1.5;
-    }
-    @include respond(phone-xs) {
-      font-size: 2.8rem;
+      line-height: 1.35;
     }
   }
 

@@ -28,12 +28,19 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+      max-width: 100%;
+      min-width: 0;
+
+      img {
+        width: min(100%, 30rem);
+        height: auto;
+      }
 
       @include respond(tab-land) {
         height: 100%;
       }
       @include respond(tab-port-sm) {
-        padding-bottom: 6.4rem;
+        padding-bottom: 4rem;
       }
     }
 
@@ -42,6 +49,8 @@
       height: 100%;
       justify-content: center;
       flex-direction: column;
+      max-width: 100%;
+      min-width: 0;
 
       @include respond(tab-port-sm) {
         align-items: center;
@@ -49,6 +58,8 @@
 
       &-text {
         text-align: left;
+        max-width: 100%;
+        overflow-wrap: break-word;
 
         @include respond(tab-port) {
           text-align: left;

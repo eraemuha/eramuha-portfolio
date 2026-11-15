@@ -25,13 +25,11 @@ a:hover {
 .section-title {
   margin: 0px;
   margin-bottom: 4.5rem;
-  font-size: $big-font-size;
+  font-size: clamp(2.8rem, 2vw + 1.8rem, $big-font-size);
   font-weight: bold;
   text-transform: uppercase;
-
-  @include respond(phone) {
-    font-size: 2.8rem;
-  }
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .dark-blue-text {

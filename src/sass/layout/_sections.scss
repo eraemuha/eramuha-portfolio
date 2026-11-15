@@ -2,9 +2,9 @@
 section {
   padding: 5rem 0rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     border: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: max(1.6rem, env(safe-area-inset-left));
+    padding-right: max(1.6rem, env(safe-area-inset-right));
   }
 }

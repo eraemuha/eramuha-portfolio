@@ -21,6 +21,8 @@
   .contact-wrapper {
     margin-top: 3.2rem;
     padding: 0 2rem;
+    max-width: 100%;
+    min-width: 0;
     backface-visibility: hidden;
 
     &__text {

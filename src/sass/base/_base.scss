@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  overflow-x: clip;
 
   &.sr .load-hidden {
     visibility: hidden;
@@ -9,4 +10,16 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Long words and flex items must be allowed to shrink inside a column.
+.row > [class*="col-"] {
+  min-width: 0;
 }
